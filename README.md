@@ -27,11 +27,15 @@ After verifying the algorithm and having a big picture of the system,I started t
 
 As for the FSM, there are 9 state in the chip, starting from initialization to sleeping mode.After initialization the chip should receive rj data and coefficient data. And then it’s ready for FIR computing. When it’s in working mode, the chip will go to sleep to reduce power consumption if it receive 800 successive zeros on both channels.
 
- ![MSDAP FSM](https://github.com/abdelazeem201/Mini-Stereo-Digital-Audio-Processor-MSDAP/blob/main/Pics/FSM.png)
+ <p align="center"> 
+    <img src="https://github.com/abdelazeem201/Mini-Stereo-Digital-Audio-Processor-MSDAP/blob/main/Pics/FSM.png" alt="MSDAP FSM">
+ </p>
 
 The data format is described in the following figure.Since we use integer to do the FIR computation so we need to extend the data range in order to keep the precision. So the 16 bit input data is extended to 40 bit data before computation.
 
-![MSDAP data Format](https://github.com/abdelazeem201/Mini-Stereo-Digital-Audio-Processor-MSDAP/blob/main/Pics/41.png)
+<p align="center"> 
+    <img src="https://github.com/abdelazeem201/Mini-Stereo-Digital-Audio-Processor-MSDAP/blob/main/Pics/41.png" alt="MSDAP Data Format">
+ </p>
 
 
 # Implementation in Verilog:
