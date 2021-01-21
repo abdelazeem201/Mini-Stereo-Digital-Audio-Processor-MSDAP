@@ -65,6 +65,7 @@ Resetting data is basically setting the buffer head to zero and discarding the r
 *4.Data computing and sending*
 
 This part contains 7 states, computing process and sending data process:
+
 s0,s1      :initialize
 
 s2         :computing each uj (512 sclk)
