@@ -115,3 +115,12 @@ I implemented the design using SMIC 180nm by IC Compiler
     <img src="https://github.com/abdelazeem201/Mini-Stereo-Digital-Audio-Processor-MSDAP/blob/main/Pics/Physical%20Design%20Layout.png" alt="Physical Design">
  </p>
 
+# Conclusion
+
+*In this project, the low power and low cost MSDAP has been presented and designed in SMIC 180nm CMOS technolog.*
+
+*The total chip area is about 2.9mm2 and the power dissipationis about 45 mw* 
+
+*END*
+
+
