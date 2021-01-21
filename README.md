@@ -106,3 +106,12 @@ and the MSDAP CHIP
 and the Critical Path
 
 ![Critical Path](https://github.com/abdelazeem201/Mini-Stereo-Digital-Audio-Processor-MSDAP/blob/main/Pics/worst_slak.PNG)
+
+# PnR Flow:
+
+I implemented the design using SMIC 180nm by IC Compiler
+
+<p align="center"> 
+    <img src="https://github.com/abdelazeem201/Mini-Stereo-Digital-Audio-Processor-MSDAP/blob/main/Pics/Physical%20Design%20Layout.png" alt="Physical Design">
+ </p>
+
