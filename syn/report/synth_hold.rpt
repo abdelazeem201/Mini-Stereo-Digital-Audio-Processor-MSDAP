@@ -1,0 +1,258 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 4
+Design : top
+Version: G-2012.06-SP2
+Date   : Wed Jan 20 10:13:27 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: Sipo/clk_gate_dataL_reg_1/latch
+              (positive level-sensitive latch clocked by Dclk)
+  Endpoint: Sipo/clk_gate_dataL_reg_1/main_gate
+            (gating element for clock Dclk)
+  Path Group: Dclk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sipo/clk_gate_dataL_reg_1/latch/G (TLATX1)              0.00       0.00 r
+  Sipo/clk_gate_dataL_reg_1/latch/QN (TLATX1)             0.23       0.23 r
+  Sipo/clk_gate_dataL_reg_1/main_gate/A (OR2X2)           0.00       0.23 r
+  data arrival time                                                  0.23
+
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sipo/clk_gate_dataL_reg_1/main_gate/B (OR2X2)           0.00       0.00 r
+  clock gating hold time                                  0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+
+  Startpoint: Sipo/clk_gate_dataL_reg/latch
+              (positive level-sensitive latch clocked by Dclk)
+  Endpoint: Sipo/clk_gate_dataL_reg/main_gate
+            (gating element for clock Dclk)
+  Path Group: Dclk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sipo/clk_gate_dataL_reg/latch/G (TLATXL)                0.00       0.00 r
+  Sipo/clk_gate_dataL_reg/latch/QN (TLATXL)               0.23       0.23 r
+  Sipo/clk_gate_dataL_reg/main_gate/A (OR2X2)             0.00       0.23 r
+  data arrival time                                                  0.23
+
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sipo/clk_gate_dataL_reg/main_gate/B (OR2X2)             0.00       0.00 r
+  clock gating hold time                                  0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+
+  Startpoint: Sipo/clk_gate_dataL_reg_0/latch
+              (positive level-sensitive latch clocked by Dclk)
+  Endpoint: Sipo/clk_gate_dataL_reg_0/main_gate
+            (gating element for clock Dclk)
+  Path Group: Dclk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sipo/clk_gate_dataL_reg_0/latch/G (TLATXL)              0.00       0.00 r
+  Sipo/clk_gate_dataL_reg_0/latch/QN (TLATXL)             0.23       0.23 r
+  Sipo/clk_gate_dataL_reg_0/main_gate/A (OR2X2)           0.00       0.23 r
+  data arrival time                                                  0.23
+
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sipo/clk_gate_dataL_reg_0/main_gate/B (OR2X2)           0.00       0.00 r
+  clock gating hold time                                  0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+
+  Startpoint: Sipo/count_bit_reg[1]
+              (falling edge-triggered flip-flop clocked by Dclk)
+  Endpoint: Sipo/count_bit_reg[1]
+            (falling edge-triggered flip-flop clocked by Dclk)
+  Path Group: Dclk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Dclk (fall edge)                 651.00     651.00
+  clock network delay (ideal)              0.00     651.00
+  Sipo/count_bit_reg[1]/CKN (DFFNSX2)      0.00     651.00 f
+  Sipo/count_bit_reg[1]/QN (DFFNSX2)       0.23     651.23 f
+  Sipo/U28/Y (OAI221XL)                    0.14     651.37 r
+  Sipo/count_bit_reg[1]/D (DFFNSX2)        0.00     651.37 r
+  data arrival time                                 651.37
+
+  clock Dclk (fall edge)                 651.00     651.00
+  clock network delay (ideal)              0.00     651.00
+  Sipo/count_bit_reg[1]/CKN (DFFNSX2)      0.00     651.00 f
+  library hold time                        0.03     651.03
+  data required time                                651.03
+  -----------------------------------------------------------
+  data required time                                651.03
+  data arrival time                                -651.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.35
+
+
+  Startpoint: PISOL/clk_gate_register_piso_reg_0/latch
+              (negative level-sensitive latch clocked by Sclk)
+  Endpoint: PISOL/clk_gate_register_piso_reg_0/main_gate
+            (gating element for clock Sclk)
+  Path Group: Sclk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Sclk (fall edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  PISOL/clk_gate_register_piso_reg_0/latch/GN (TLATNX1)
+                                                          0.00 #    20.00 f
+  PISOL/clk_gate_register_piso_reg_0/latch/Q (TLATNX1)
+                                                          0.15      20.15 r
+  PISOL/clk_gate_register_piso_reg_0/main_gate/A (AND2X2)
+                                                          0.00      20.15 r
+  data arrival time                                                 20.15
+
+  clock Sclk (fall edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  PISOL/clk_gate_register_piso_reg_0/main_gate/B (AND2X2)
+                                                          0.00      20.00 f
+  clock gating hold time                                  0.00      20.00
+  data required time                                                20.00
+  --------------------------------------------------------------------------
+  data required time                                                20.00
+  data arrival time                                                -20.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.15
+
+
+  Startpoint: PISOL/clk_gate_register_piso_reg_1/latch
+              (negative level-sensitive latch clocked by Sclk)
+  Endpoint: PISOL/clk_gate_register_piso_reg_1/main_gate
+            (gating element for clock Sclk)
+  Path Group: Sclk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Sclk (fall edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  PISOL/clk_gate_register_piso_reg_1/latch/GN (TLATNX1)
+                                                          0.00 #    20.00 f
+  PISOL/clk_gate_register_piso_reg_1/latch/Q (TLATNX1)
+                                                          0.15      20.15 r
+  PISOL/clk_gate_register_piso_reg_1/main_gate/A (AND2X2)
+                                                          0.00      20.15 r
+  data arrival time                                                 20.15
+
+  clock Sclk (fall edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  PISOL/clk_gate_register_piso_reg_1/main_gate/B (AND2X2)
+                                                          0.00      20.00 f
+  clock gating hold time                                  0.00      20.00
+  data required time                                                20.00
+  --------------------------------------------------------------------------
+  data required time                                                20.00
+  data arrival time                                                -20.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.15
+
+
+  Startpoint: PISOL/clk_gate_register_piso_reg_2/latch
+              (negative level-sensitive latch clocked by Sclk)
+  Endpoint: PISOL/clk_gate_register_piso_reg_2/main_gate
+            (gating element for clock Sclk)
+  Path Group: Sclk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Sclk (fall edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  PISOL/clk_gate_register_piso_reg_2/latch/GN (TLATNX1)
+                                                          0.00 #    20.00 f
+  PISOL/clk_gate_register_piso_reg_2/latch/Q (TLATNX1)
+                                                          0.15      20.15 r
+  PISOL/clk_gate_register_piso_reg_2/main_gate/A (AND2X2)
+                                                          0.00      20.15 r
+  data arrival time                                                 20.15
+
+  clock Sclk (fall edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  PISOL/clk_gate_register_piso_reg_2/main_gate/B (AND2X2)
+                                                          0.00      20.00 f
+  clock gating hold time                                  0.00      20.00
+  data required time                                                20.00
+  --------------------------------------------------------------------------
+  data required time                                                20.00
+  data arrival time                                                -20.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.15
+
+
+  Startpoint: PISOR/clk_gate_register_piso_reg_0/latch
+              (negative level-sensitive latch clocked by Sclk)
+  Endpoint: PISOR/clk_gate_register_piso_reg_0/main_gate
+            (gating element for clock Sclk)
+  Path Group: Sclk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Sclk (fall edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  PISOR/clk_gate_register_piso_reg_0/latch/GN (TLATNX1)
+                                                          0.00 #    20.00 f
+  PISOR/clk_gate_register_piso_reg_0/latch/Q (TLATNX1)
+                                                          0.15      20.15 r
+  PISOR/clk_gate_register_piso_reg_0/main_gate/A (AND2X2)
+                                                          0.00      20.15 r
+  data arrival time                                                 20.15
+
+  clock Sclk (fall edge)                                 20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  PISOR/clk_gate_register_piso_reg_0/main_gate/B (AND2X2)
+                                                          0.00      20.00 f
+  clock gating hold time                                  0.00      20.00
+  data required time                                                20.00
+  --------------------------------------------------------------------------
+  data required time                                                20.00
+  data arrival time                                                -20.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.15
+
+
+1

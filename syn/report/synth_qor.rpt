@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : qor
+Design : top
+Version: G-2012.06-SP2
+Date   : Wed Jan 20 10:13:27 2016
+****************************************
+
+
+  Timing Path Group 'Dclk'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          0.59
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:   1302.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'Sclk'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          0.76
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:     40.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:       3188
+  Hierarchical Port Count:      10622
+  Leaf Cell Count:              74142
+  Buf/Inv Cell Count:            3192
+  CT Buf/Inv Cell Count:            2
+  Combinational Cell Count:     45479
+  Sequential Cell Count:        28663
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   714577.248973
+  Noncombinational Area:
+                       1475913.720207
+  Buf/Inv Area:          29807.870857
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:           2190490.969181
+  Design Area:         2190490.969181
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         74340
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: 192.168.64.136
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                   94.57
+  Logic Optimization:                 56.48
+  Mapping Optimization:              486.95
+  -----------------------------------------
+  Overall Compile Time:              761.27
+  Overall Compile Wall Clock Time:   820.24
+
+1

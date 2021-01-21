@@ -1,0 +1,54 @@
+Loading db file '/home/ahesham/Desktop/Abdelazeem/MSDAP/smic180/digital/sc/synopsys/typical.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : top
+Version: G-2012.06-SP2
+Date   : Wed Jan 20 10:13:27 2016
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /home/ahesham/Desktop/Abdelazeem/MSDAP/smic180/digital/sc/synopsys/typical.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+top                                      81.103    2.549 7.23e+06   83.660 100.0
+  Sipo (SIPO)                          2.64e-03 8.21e-03 1.71e+04 1.09e-02   0.0
+  PISOR (PISO_0)                       7.78e-03 3.95e-02 1.14e+04 4.73e-02   0.1
+  PISOL (PISO_1)                       7.78e-03 3.95e-02 1.14e+04 4.73e-02   0.1
+  shiftR (shift_accumulator_0)         1.01e-02 7.64e-02 9.41e+03 8.64e-02   0.1
+  shiftL (shift_accumulator_1)         1.01e-02 7.64e-02 9.41e+03 8.64e-02   0.1
+  addR (adder_0)                          0.000    0.000 2.11e+04 2.11e-05   0.0
+  addL (adder_1)                          0.000    0.000 2.11e+04 2.11e-05   0.0
+  alu_ctrl (alu_controller)            1.68e-02    0.134 5.03e+04    0.151   0.2
+  main_ctrl (main_controller)            81.009      N/A 1.99e+04   79.381  94.9
+  inR (data_memory_0)                  3.51e-03    0.621 1.16e+06    0.626   0.7
+  inL (data_memory_1)                  3.45e-03    0.621 1.16e+06    0.626   0.7
+  coeffR (coeff_memory_0)              3.78e-03    1.215 2.29e+06    1.221   1.5
+  coeffL (coeff_memory_1)              3.67e-03    1.215 2.30e+06    1.221   1.5
+  rjR (rj_memory_0)                    1.21e-02 6.53e-02 7.35e+04 7.74e-02   0.1
+  rjL (rj_memory_1)                    1.21e-02 6.53e-02 7.36e+04 7.75e-02   0.1
+1

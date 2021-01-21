@@ -1,0 +1,376 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 4
+Design : top
+Version: G-2012.06-SP2
+Date   : Wed Jan 20 10:13:27 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: Frame (input port clocked by Dclk)
+  Endpoint: Sipo/clk_gate_dataL_reg/latch
+            (positive level-sensitive latch clocked by Dclk)
+  Path Group: Dclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Frame (in)                                              0.00       1.00 f
+  main_ctrl/Frame (main_controller)                       0.00       1.00 f
+  main_ctrl/U65/Y (BUFX3)                                 0.11       1.11 f
+  main_ctrl/Frame_out (main_controller)                   0.00       1.11 f
+  Sipo/Frame (SIPO)                                       0.00       1.11 f
+  Sipo/U19/Y (INVX1)                                      0.09       1.20 r
+  Sipo/U18/Y (NAND2X1)                                    0.10       1.30 f
+  Sipo/U25/Y (NAND2BX1)                                   0.14       1.44 f
+  Sipo/U21/Y (NOR2X1)                                     0.08       1.52 r
+  Sipo/U20/Y (INVX1)                                      0.07       1.59 f
+  Sipo/clk_gate_dataL_reg/EN (SNPS_CLOCK_GATE_LOW_SIPO_0)
+                                                          0.00       1.59 f
+  Sipo/clk_gate_dataL_reg/latch/D (TLATXL)                0.00       1.59 f
+  data arrival time                                                  1.59
+
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sipo/clk_gate_dataL_reg/latch/G (TLATXL)                0.00       0.00 r
+  time borrowed from endpoint                             1.59       1.59
+  data required time                                                 1.59
+  --------------------------------------------------------------------------
+  data required time                                                 1.59
+  data arrival time                                                 -1.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  Dclk pulse width                                      651.00   
+  library setup time                                     -0.10   
+  --------------------------------------------------------------
+  max time borrow                                       650.90   
+  actual time borrow                                      1.59   
+  --------------------------------------------------------------
+
+
+  Startpoint: Frame (input port clocked by Dclk)
+  Endpoint: Sipo/clk_gate_dataL_reg_0/latch
+            (positive level-sensitive latch clocked by Dclk)
+  Path Group: Dclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Frame (in)                                              0.00       1.00 f
+  main_ctrl/Frame (main_controller)                       0.00       1.00 f
+  main_ctrl/U65/Y (BUFX3)                                 0.11       1.11 f
+  main_ctrl/Frame_out (main_controller)                   0.00       1.11 f
+  Sipo/Frame (SIPO)                                       0.00       1.11 f
+  Sipo/U19/Y (INVX1)                                      0.09       1.20 r
+  Sipo/U18/Y (NAND2X1)                                    0.10       1.30 f
+  Sipo/U25/Y (NAND2BX1)                                   0.14       1.44 f
+  Sipo/U21/Y (NOR2X1)                                     0.08       1.52 r
+  Sipo/U20/Y (INVX1)                                      0.07       1.59 f
+  Sipo/clk_gate_dataL_reg_0/EN (SNPS_CLOCK_GATE_LOW_SIPO_2)
+                                                          0.00       1.59 f
+  Sipo/clk_gate_dataL_reg_0/latch/D (TLATXL)              0.00       1.59 f
+  data arrival time                                                  1.59
+
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sipo/clk_gate_dataL_reg_0/latch/G (TLATXL)              0.00       0.00 r
+  time borrowed from endpoint                             1.59       1.59
+  data required time                                                 1.59
+  --------------------------------------------------------------------------
+  data required time                                                 1.59
+  data arrival time                                                 -1.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  Dclk pulse width                                      651.00   
+  library setup time                                     -0.10   
+  --------------------------------------------------------------
+  max time borrow                                       650.90   
+  actual time borrow                                      1.59   
+  --------------------------------------------------------------
+
+
+  Startpoint: Frame (input port clocked by Dclk)
+  Endpoint: Sipo/clk_gate_dataL_reg_1/latch
+            (positive level-sensitive latch clocked by Dclk)
+  Path Group: Dclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Frame (in)                                              0.00       1.00 f
+  main_ctrl/Frame (main_controller)                       0.00       1.00 f
+  main_ctrl/U65/Y (BUFX3)                                 0.11       1.11 f
+  main_ctrl/Frame_out (main_controller)                   0.00       1.11 f
+  Sipo/Frame (SIPO)                                       0.00       1.11 f
+  Sipo/U19/Y (INVX1)                                      0.09       1.20 r
+  Sipo/U18/Y (NAND2X1)                                    0.10       1.30 f
+  Sipo/U25/Y (NAND2BX1)                                   0.14       1.44 f
+  Sipo/U21/Y (NOR2X1)                                     0.08       1.52 r
+  Sipo/U20/Y (INVX1)                                      0.07       1.59 f
+  Sipo/clk_gate_dataL_reg_1/EN (SNPS_CLOCK_GATE_LOW_SIPO_1)
+                                                          0.00       1.59 f
+  Sipo/clk_gate_dataL_reg_1/latch/D (TLATX1)              0.00       1.59 f
+  data arrival time                                                  1.59
+
+  clock Dclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Sipo/clk_gate_dataL_reg_1/latch/G (TLATX1)              0.00       0.00 r
+  time borrowed from endpoint                             1.59       1.59
+  data required time                                                 1.59
+  --------------------------------------------------------------------------
+  data required time                                                 1.59
+  data arrival time                                                 -1.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  Dclk pulse width                                      651.00   
+  library setup time                                     -0.11   
+  --------------------------------------------------------------
+  max time borrow                                       650.89   
+  actual time borrow                                      1.59   
+  --------------------------------------------------------------
+
+
+  Startpoint: PISOL/OutReady_reg
+              (rising edge-triggered flip-flop clocked by Sclk)
+  Endpoint: OutReady (output port clocked by Dclk)
+  Path Group: Dclk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock Sclk (rise edge)               14320.00   14320.00
+  clock network delay (ideal)              0.00   14320.00
+  PISOL/OutReady_reg/CK (DFFHQX1)          0.00   14320.00 r
+  PISOL/OutReady_reg/Q (DFFHQX1)           0.15   14320.15 f
+  PISOL/OutReady (PISO_1)                  0.00   14320.15 f
+  U2/Y (OR2XL)                             0.12   14320.27 f
+  OutReady (out)                           0.00   14320.27 f
+  data arrival time                               14320.27
+
+  clock Dclk (rise edge)               14322.00   14322.00
+  clock network delay (ideal)              0.00   14322.00
+  output external delay                   -1.00   14321.00
+  data required time                              14321.00
+  -----------------------------------------------------------
+  data required time                              14321.00
+  data arrival time                               -14320.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.73
+
+
+  Startpoint: Sipo/in_flag_reg
+              (falling edge-triggered flip-flop clocked by Dclk)
+  Endpoint: main_ctrl/clk_gate_coeffwrite_reg/latch
+            (negative level-sensitive latch clocked by Sclk)
+  Path Group: Sclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (fall edge)                              18879.00   18879.00
+  clock network delay (ideal)                             0.00   18879.00
+  Sipo/in_flag_reg/CKN (DFFNRX4)                          0.00   18879.00 f
+  Sipo/in_flag_reg/Q (DFFNRX4)                            0.38   18879.38 f
+  Sipo/in_flag (SIPO)                                     0.00   18879.38 f
+  main_ctrl/in_flag (main_controller)                     0.00   18879.38 f
+  main_ctrl/U14/Y (INVX4)                                 0.05   18879.43 r
+  main_ctrl/U83/Y (INVX1)                                 0.04   18879.47 f
+  main_ctrl/U158/Y (NAND3X1)                              0.08   18879.55 r
+  main_ctrl/U157/Y (NOR2X1)                               0.05   18879.61 f
+  main_ctrl/U155/Y (NOR2X1)                               0.10   18879.71 r
+  main_ctrl/U161/Y (AOI21X1)                              0.06   18879.77 f
+  main_ctrl/clk_gate_coeffwrite_reg/EN (SNPS_CLOCK_GATE_HIGH_main_controller_0)
+                                                          0.00   18879.77 f
+  main_ctrl/clk_gate_coeffwrite_reg/latch/D (TLATNXL)     0.00   18879.77 f
+  data arrival time                                              18879.77
+
+  clock Sclk (fall edge)                              18860.00   18860.00
+  clock network delay (ideal)                             0.00   18860.00
+  main_ctrl/clk_gate_coeffwrite_reg/latch/GN (TLATNXL)
+                                                          0.00   18860.00 f
+  time borrowed from endpoint                            19.76   18879.77
+  data required time                                             18879.77
+  --------------------------------------------------------------------------
+  data required time                                             18879.77
+  data arrival time                                              -18879.77
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  Sclk pulse width                                       20.00   
+  library setup time                                     -0.06   
+  --------------------------------------------------------------
+  max time borrow                                        19.94   
+  actual time borrow                                     19.76   
+  --------------------------------------------------------------
+
+
+  Startpoint: Sipo/in_flag_reg
+              (falling edge-triggered flip-flop clocked by Dclk)
+  Endpoint: main_ctrl/clk_gate_count_rj_reg/latch
+            (negative level-sensitive latch clocked by Sclk)
+  Path Group: Sclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (fall edge)                              18879.00   18879.00
+  clock network delay (ideal)                             0.00   18879.00
+  Sipo/in_flag_reg/CKN (DFFNRX4)                          0.00   18879.00 f
+  Sipo/in_flag_reg/Q (DFFNRX4)                            0.31   18879.31 r
+  Sipo/in_flag (SIPO)                                     0.00   18879.31 r
+  main_ctrl/in_flag (main_controller)                     0.00   18879.31 r
+  main_ctrl/U14/Y (INVX4)                                 0.03   18879.34 f
+  main_ctrl/U16/Y (CLKINVX3)                              0.06   18879.40 r
+  main_ctrl/U129/Y (NAND2X1)                              0.04   18879.44 f
+  main_ctrl/U76/Y (NOR2X1)                                0.12   18879.56 r
+  main_ctrl/U109/Y (NAND2X1)                              0.04   18879.61 f
+  main_ctrl/U108/Y (AOI21X1)                              0.08   18879.69 r
+  main_ctrl/clk_gate_count_rj_reg/EN (SNPS_CLOCK_GATE_HIGH_main_controller_4)
+                                                          0.00   18879.69 r
+  main_ctrl/clk_gate_count_rj_reg/latch/D (TLATNXL)       0.00   18879.69 r
+  data arrival time                                              18879.69
+
+  clock Sclk (fall edge)                              18860.00   18860.00
+  clock network delay (ideal)                             0.00   18860.00
+  main_ctrl/clk_gate_count_rj_reg/latch/GN (TLATNXL)      0.00   18860.00 f
+  time borrowed from endpoint                            19.69   18879.69
+  data required time                                             18879.69
+  --------------------------------------------------------------------------
+  data required time                                             18879.69
+  data arrival time                                              -18879.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  Sclk pulse width                                       20.00   
+  library setup time                                     -0.06   
+  --------------------------------------------------------------
+  max time borrow                                        19.94   
+  actual time borrow                                     19.69   
+  --------------------------------------------------------------
+
+
+  Startpoint: Sipo/in_flag_reg
+              (falling edge-triggered flip-flop clocked by Dclk)
+  Endpoint: main_ctrl/clk_gate_datawrite_reg/latch
+            (negative level-sensitive latch clocked by Sclk)
+  Path Group: Sclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (fall edge)                              18879.00   18879.00
+  clock network delay (ideal)                             0.00   18879.00
+  Sipo/in_flag_reg/CKN (DFFNRX4)                          0.00   18879.00 f
+  Sipo/in_flag_reg/Q (DFFNRX4)                            0.38   18879.38 f
+  Sipo/in_flag (SIPO)                                     0.00   18879.38 f
+  main_ctrl/in_flag (main_controller)                     0.00   18879.38 f
+  main_ctrl/U14/Y (INVX4)                                 0.05   18879.43 r
+  main_ctrl/U16/Y (CLKINVX3)                              0.06   18879.49 f
+  main_ctrl/U15/Y (NAND2X2)                               0.08   18879.57 r
+  main_ctrl/U75/Y (OAI21XL)                               0.09   18879.66 f
+  main_ctrl/U118/Y (AOI21X1)                              0.09   18879.75 r
+  main_ctrl/clk_gate_datawrite_reg/EN (SNPS_CLOCK_GATE_HIGH_main_controller_7)
+                                                          0.00   18879.75 r
+  main_ctrl/clk_gate_datawrite_reg/latch/D (TLATNXL)      0.00   18879.75 r
+  data arrival time                                              18879.75
+
+  clock Sclk (fall edge)                              18860.00   18860.00
+  clock network delay (ideal)                             0.00   18860.00
+  main_ctrl/clk_gate_datawrite_reg/latch/GN (TLATNXL)     0.00   18860.00 f
+  time borrowed from endpoint                            19.75   18879.75
+  data required time                                             18879.75
+  --------------------------------------------------------------------------
+  data required time                                             18879.75
+  data arrival time                                              -18879.75
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  Sclk pulse width                                       20.00   
+  library setup time                                     -0.06   
+  --------------------------------------------------------------
+  max time borrow                                        19.94   
+  actual time borrow                                     19.75   
+  --------------------------------------------------------------
+
+
+  Startpoint: Sipo/in_flag_reg
+              (falling edge-triggered flip-flop clocked by Dclk)
+  Endpoint: main_ctrl/clk_gate_count_coeff_reg/latch
+            (negative level-sensitive latch clocked by Sclk)
+  Path Group: Sclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (fall edge)                              18879.00   18879.00
+  clock network delay (ideal)                             0.00   18879.00
+  Sipo/in_flag_reg/CKN (DFFNRX4)                          0.00   18879.00 f
+  Sipo/in_flag_reg/Q (DFFNRX4)                            0.38   18879.38 f
+  Sipo/in_flag (SIPO)                                     0.00   18879.38 f
+  main_ctrl/in_flag (main_controller)                     0.00   18879.38 f
+  main_ctrl/U14/Y (INVX4)                                 0.05   18879.43 r
+  main_ctrl/U83/Y (INVX1)                                 0.04   18879.47 f
+  main_ctrl/U158/Y (NAND3X1)                              0.08   18879.55 r
+  main_ctrl/U157/Y (NOR2X1)                               0.05   18879.61 f
+  main_ctrl/U111/Y (NOR2X1)                               0.08   18879.69 r
+  main_ctrl/U110/Y (NOR2X1)                               0.04   18879.72 f
+  main_ctrl/clk_gate_count_coeff_reg/EN (SNPS_CLOCK_GATE_HIGH_main_controller_5)
+                                                          0.00   18879.72 f
+  main_ctrl/clk_gate_count_coeff_reg/latch/D (TLATNX1)
+                                                          0.00   18879.72 f
+  data arrival time                                              18879.72
+
+  clock Sclk (fall edge)                              18860.00   18860.00
+  clock network delay (ideal)                             0.00   18860.00
+  main_ctrl/clk_gate_count_coeff_reg/latch/GN (TLATNX1)
+                                                          0.00   18860.00 f
+  time borrowed from endpoint                            19.72   18879.72
+  data required time                                             18879.72
+  --------------------------------------------------------------------------
+  data required time                                             18879.72
+  data arrival time                                              -18879.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  Sclk pulse width                                       20.00   
+  library setup time                                     -0.07   
+  --------------------------------------------------------------
+  max time borrow                                        19.93   
+  actual time borrow                                     19.72   
+  --------------------------------------------------------------
+
+
+1

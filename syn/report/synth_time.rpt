@@ -1,0 +1,112 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: G-2012.06-SP2
+Date   : Wed Jan 20 10:13:27 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: Frame (input port clocked by Dclk)
+  Endpoint: Sipo/clk_gate_dataL_reg/latch
+            (positive level-sensitive latch clocked by Dclk)
+  Path Group: Dclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  1.0000     1.0000 f
+  Frame (in)                                            0.0000     1.0000 f
+  main_ctrl/Frame (main_controller)                     0.0000     1.0000 f
+  main_ctrl/U65/Y (BUFX3)                               0.1098     1.1098 f
+  main_ctrl/Frame_out (main_controller)                 0.0000     1.1098 f
+  Sipo/Frame (SIPO)                                     0.0000     1.1098 f
+  Sipo/U19/Y (INVX1)                                    0.0917     1.2015 r
+  Sipo/U18/Y (NAND2X1)                                  0.0967     1.2982 f
+  Sipo/U25/Y (NAND2BX1)                                 0.1384     1.4366 f
+  Sipo/U21/Y (NOR2X1)                                   0.0845     1.5211 r
+  Sipo/U20/Y (INVX1)                                    0.0685     1.5896 f
+  Sipo/clk_gate_dataL_reg/EN (SNPS_CLOCK_GATE_LOW_SIPO_0)
+                                                        0.0000     1.5896 f
+  Sipo/clk_gate_dataL_reg/latch/D (TLATXL)              0.0000     1.5896 f
+  data arrival time                                                1.5896
+
+  clock Dclk (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  Sipo/clk_gate_dataL_reg/latch/G (TLATXL)              0.0000     0.0000 r
+  time borrowed from endpoint                           1.5896     1.5896
+  data required time                                               1.5896
+  --------------------------------------------------------------------------
+  data required time                                               1.5896
+  data arrival time                                               -1.5896
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  Dclk pulse width                                    651.0000   
+  library setup time                                   -0.1001   
+  --------------------------------------------------------------
+  max time borrow                                     650.8999   
+  actual time borrow                                    1.5896   
+  --------------------------------------------------------------
+
+
+  Startpoint: Sipo/in_flag_reg
+              (falling edge-triggered flip-flop clocked by Dclk)
+  Endpoint: main_ctrl/clk_gate_coeffwrite_reg/latch
+            (negative level-sensitive latch clocked by Sclk)
+  Path Group: Sclk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock Dclk (fall edge)                              18879.0000 18879.0000
+  clock network delay (ideal)                           0.0000   18879.0000
+  Sipo/in_flag_reg/CKN (DFFNRX4)                        0.0000   18879.0000 f
+  Sipo/in_flag_reg/Q (DFFNRX4)                          0.3809   18879.3809 f
+  Sipo/in_flag (SIPO)                                   0.0000   18879.3809 f
+  main_ctrl/in_flag (main_controller)                   0.0000   18879.3809 f
+  main_ctrl/U14/Y (INVX4)                               0.0508   18879.4316 r
+  main_ctrl/U83/Y (INVX1)                               0.0391   18879.4707 f
+  main_ctrl/U158/Y (NAND3X1)                            0.0820   18879.5527 r
+  main_ctrl/U157/Y (NOR2X1)                             0.0527   18879.6055 f
+  main_ctrl/U155/Y (NOR2X1)                             0.1016   18879.7070 r
+  main_ctrl/U161/Y (AOI21X1)                            0.0586   18879.7656 f
+  main_ctrl/clk_gate_coeffwrite_reg/EN (SNPS_CLOCK_GATE_HIGH_main_controller_0)
+                                                        0.0000   18879.7656 f
+  main_ctrl/clk_gate_coeffwrite_reg/latch/D (TLATNXL)   0.0000   18879.7656 f
+  data arrival time                                              18879.7656
+
+  clock Sclk (fall edge)                              18860.0000 18860.0000
+  clock network delay (ideal)                           0.0000   18860.0000
+  main_ctrl/clk_gate_coeffwrite_reg/latch/GN (TLATNXL)
+                                                        0.0000   18860.0000 f
+  time borrowed from endpoint                          19.7648   18879.7656
+  data required time                                             18879.7656
+  --------------------------------------------------------------------------
+  data required time                                             18879.7656
+  data arrival time                                              -18879.7656
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  Sclk pulse width                                     20.0000   
+  library setup time                                   -0.0609   
+  --------------------------------------------------------------
+  max time borrow                                      19.9391   
+  actual time borrow                                   19.7648   
+  --------------------------------------------------------------
+
+
+1
