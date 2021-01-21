@@ -1,0 +1,75 @@
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+inL/count_zero_reg[0]/next_state
+inL/count_zero_reg[0]/synch_enable
+inL/count_zero_reg[1]/next_state
+inL/count_zero_reg[1]/synch_enable
+inL/count_zero_reg[2]/next_state
+inL/count_zero_reg[2]/synch_enable
+inL/count_zero_reg[3]/next_state
+inL/count_zero_reg[3]/synch_enable
+inL/count_zero_reg[4]/next_state
+inL/count_zero_reg[4]/synch_enable
+inL/count_zero_reg[5]/next_state
+inL/count_zero_reg[5]/synch_enable
+inL/count_zero_reg[6]/next_state
+inL/count_zero_reg[6]/synch_enable
+inL/count_zero_reg[7]/next_state
+inL/count_zero_reg[7]/synch_enable
+inL/count_zero_reg[8]/next_state
+inL/count_zero_reg[8]/synch_enable
+inL/count_zero_reg[9]/next_state
+inL/count_zero_reg[9]/synch_enable
+inL/count_zero_reg[10]/next_state
+inL/count_zero_reg[10]/synch_enable
+inL/count_zero_reg[11]/next_state
+inL/count_zero_reg[11]/synch_enable
+inL/flag_zero_reg/next_state
+inL/flag_zero_reg/synch_enable
+inR/count_zero_reg[0]/next_state
+inR/count_zero_reg[0]/synch_enable
+inR/count_zero_reg[1]/next_state
+inR/count_zero_reg[1]/synch_enable
+inR/count_zero_reg[2]/next_state
+inR/count_zero_reg[2]/synch_enable
+inR/count_zero_reg[3]/next_state
+inR/count_zero_reg[3]/synch_enable
+inR/count_zero_reg[4]/next_state
+inR/count_zero_reg[4]/synch_enable
+inR/count_zero_reg[5]/next_state
+inR/count_zero_reg[5]/synch_enable
+inR/count_zero_reg[6]/next_state
+inR/count_zero_reg[6]/synch_enable
+inR/count_zero_reg[7]/next_state
+inR/count_zero_reg[7]/synch_enable
+inR/count_zero_reg[8]/next_state
+inR/count_zero_reg[8]/synch_enable
+inR/count_zero_reg[9]/next_state
+inR/count_zero_reg[9]/synch_enable
+inR/count_zero_reg[10]/next_state
+inR/count_zero_reg[10]/synch_enable
+inR/count_zero_reg[11]/next_state
+inR/count_zero_reg[11]/synch_enable
+inR/flag_zero_reg/next_state
+inR/flag_zero_reg/synch_enable
+main_ctrl/state_present_reg[0]/data_in
+main_ctrl/state_present_reg[1]/data_in
+main_ctrl/state_present_reg[2]/data_in
+main_ctrl/state_present_reg[3]/data_in
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
