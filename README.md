@@ -30,3 +30,15 @@ The data format is described in the following figure.Since we use integer to do 
 
 # Implementation in Verilog:
 
+*1.FSM*
+
+The FSM used in this project is moore machine and there are two FSM in the code and each FSM consists of 3 processes:
+
+Determine State:  Determine the next state base on current information.
+
+Change State: current_state <= next_state
+
+Data Process:  The data process implementation of each state
+
+Since the implementation of FSM and data processing are separated so it’s easier to code,debug and synthesize.
+
